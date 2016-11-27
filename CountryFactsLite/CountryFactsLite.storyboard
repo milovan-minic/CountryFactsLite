@@ -42,18 +42,43 @@
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jrn-Ga-D8h" userLabel="CountryInfo">
                                 <rect key="frame" x="0.0" y="64" width="375" height="301"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bwc-bj-IeP" userLabel="Info">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beijing" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="23I-G2-bgL">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="36"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.098678234011627911" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="23I-G2-bgL" firstAttribute="leading" secondItem="bwc-bj-IeP" secondAttribute="leading" id="GEo-pj-nmq"/>
+                                            <constraint firstItem="23I-G2-bgL" firstAttribute="top" secondItem="bwc-bj-IeP" secondAttribute="top" id="IeI-T8-lP1"/>
+                                            <constraint firstAttribute="height" constant="100" id="Wjf-VJ-PtY"/>
+                                            <constraint firstAttribute="trailing" secondItem="23I-G2-bgL" secondAttribute="trailing" id="tER-RV-fx9"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="bwc-bj-IeP" secondAttribute="trailing" id="1xU-Fb-Qbn"/>
+                                    <constraint firstItem="bwc-bj-IeP" firstAttribute="top" secondItem="Jrn-Ga-D8h" secondAttribute="top" id="eXK-md-v7r"/>
+                                    <constraint firstItem="bwc-bj-IeP" firstAttribute="leading" secondItem="Jrn-Ga-D8h" secondAttribute="leading" id="msU-6O-85p"/>
+                                </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7FL-dp-ha5" userLabel="CountryBenefits">
                                 <rect key="frame" x="0.0" y="366" width="375" height="301"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u2Y-ai-ep7" userLabel="Photos">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.097292877906976744" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Wo-tk-v2z" userLabel="Benefits">
                                         <rect key="frame" x="0.0" y="151" width="375" height="150"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.097292877906976744" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
