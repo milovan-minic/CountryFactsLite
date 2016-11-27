@@ -42,11 +42,31 @@
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jrn-Ga-D8h" userLabel="CountryInfo">
                                 <rect key="frame" x="0.0" y="64" width="375" height="301"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7FL-dp-ha5" userLabel="CountryBenefits">
                                 <rect key="frame" x="0.0" y="366" width="375" height="301"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u2Y-ai-ep7" userLabel="Photos">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Wo-tk-v2z" userLabel="Benefits">
+                                        <rect key="frame" x="0.0" y="151" width="375" height="150"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="8Wo-tk-v2z" secondAttribute="bottom" id="01g-PX-sDn"/>
+                                    <constraint firstItem="8Wo-tk-v2z" firstAttribute="top" secondItem="u2Y-ai-ep7" secondAttribute="bottom" constant="1" id="IvJ-Ef-d2H"/>
+                                    <constraint firstAttribute="trailing" secondItem="u2Y-ai-ep7" secondAttribute="trailing" id="Mgf-Om-vz8"/>
+                                    <constraint firstItem="8Wo-tk-v2z" firstAttribute="height" secondItem="u2Y-ai-ep7" secondAttribute="height" id="PJK-XM-69b"/>
+                                    <constraint firstItem="8Wo-tk-v2z" firstAttribute="leading" secondItem="7FL-dp-ha5" secondAttribute="leading" id="Yj9-Nq-7Wz"/>
+                                    <constraint firstAttribute="trailing" secondItem="8Wo-tk-v2z" secondAttribute="trailing" id="acD-l4-aDk"/>
+                                    <constraint firstItem="u2Y-ai-ep7" firstAttribute="leading" secondItem="7FL-dp-ha5" secondAttribute="leading" id="t0h-Ek-7AT"/>
+                                    <constraint firstItem="u2Y-ai-ep7" firstAttribute="top" secondItem="7FL-dp-ha5" secondAttribute="top" id="vbS-ou-GbB"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
