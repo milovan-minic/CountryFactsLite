@@ -12,6 +12,7 @@
 		E80F5EB81DEB21F300777038 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E80F5EB61DEB21F300777038 /* Main.storyboard */; };
 		E80F5EBA1DEB21F300777038 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E80F5EB91DEB21F300777038 /* Assets.xcassets */; };
 		E80F5EBD1DEB21F300777038 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E80F5EBB1DEB21F300777038 /* LaunchScreen.storyboard */; };
+		E80F5EE31DEB26D200777038 /* testFile.txt in Resources */ = {isa = PBXBuildFile; fileRef = E80F5EE21DEB26D200777038 /* testFile.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		E80F5EB91DEB21F300777038 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E80F5EBC1DEB21F300777038 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E80F5EBE1DEB21F300777038 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E80F5EE21DEB26D200777038 /* testFile.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = testFile.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +40,7 @@
 		E80F5EA61DEB21F300777038 = {
 			isa = PBXGroup;
 			children = (
+				E80F5EE21DEB26D200777038 /* testFile.txt */,
 				E80F5EB11DEB21F300777038 /* CountryFactsLite */,
 				E80F5EB01DEB21F300777038 /* Products */,
 			);
@@ -125,6 +128,7 @@
 			files = (
 				E80F5EBD1DEB21F300777038 /* LaunchScreen.storyboard in Resources */,
 				E80F5EBA1DEB21F300777038 /* Assets.xcassets in Resources */,
+				E80F5EE31DEB26D200777038 /* testFile.txt in Resources */,
 				E80F5EB81DEB21F300777038 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,6 +305,7 @@
 				E80F5EC31DEB21F300777038 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
