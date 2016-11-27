@@ -40,23 +40,29 @@
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="Beijing" translatesAutoresizingMaskIntoConstraints="NO" id="FFc-8h-AIZ">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                             </imageView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jrn-Ga-D8h" userLabel="CountryInfo">
-                                <rect key="frame" x="67" y="97" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jrn-Ga-D8h" userLabel="CountryInfo">
+                                <rect key="frame" x="0.0" y="64" width="375" height="301"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7FL-dp-ha5" userLabel="CountryBenefits">
-                                <rect key="frame" x="67" y="489" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7FL-dp-ha5" userLabel="CountryBenefits">
+                                <rect key="frame" x="0.0" y="366" width="375" height="301"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="FFc-8h-AIZ" firstAttribute="top" secondItem="Tyl-xV-vzd" secondAttribute="bottom" id="4Xz-NB-dhR"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="7FL-dp-ha5" secondAttribute="bottom" id="5LM-gC-WqQ"/>
+                            <constraint firstAttribute="trailing" secondItem="7FL-dp-ha5" secondAttribute="trailing" id="IZV-5Y-ezj"/>
+                            <constraint firstItem="7FL-dp-ha5" firstAttribute="height" secondItem="Jrn-Ga-D8h" secondAttribute="height" id="K0k-uG-Unk"/>
                             <constraint firstItem="FFc-8h-AIZ" firstAttribute="leading" secondItem="AAa-hk-iFO" secondAttribute="leading" id="UxY-Wk-Q2c"/>
                             <constraint firstAttribute="trailing" secondItem="FFc-8h-AIZ" secondAttribute="trailing" id="Vno-12-3zj"/>
+                            <constraint firstItem="Jrn-Ga-D8h" firstAttribute="leading" secondItem="AAa-hk-iFO" secondAttribute="leading" id="cLd-xP-xba"/>
+                            <constraint firstItem="7FL-dp-ha5" firstAttribute="leading" secondItem="AAa-hk-iFO" secondAttribute="leading" id="fbA-hr-jaw"/>
+                            <constraint firstItem="Jrn-Ga-D8h" firstAttribute="top" secondItem="Tyl-xV-vzd" secondAttribute="bottom" id="feV-0l-ZoI"/>
+                            <constraint firstItem="7FL-dp-ha5" firstAttribute="top" secondItem="Jrn-Ga-D8h" secondAttribute="bottom" constant="1" id="hp5-1T-2ee"/>
                             <constraint firstAttribute="bottomMargin" secondItem="FFc-8h-AIZ" secondAttribute="bottom" id="mRN-UG-kiX"/>
+                            <constraint firstAttribute="trailing" secondItem="Jrn-Ga-D8h" secondAttribute="trailing" id="sC1-Ai-iQC"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="qAE-KQ-UeZ"/>
