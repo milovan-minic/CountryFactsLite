@@ -24,10 +24,10 @@
             </objects>
             <point key="canvasLocation" x="-188" y="189"/>
         </scene>
-        <!--View Controller-->
+        <!--Country Facts Controller-->
         <scene sceneID="6qc-jh-2dl">
             <objects>
-                <viewController id="pJc-PA-los" sceneMemberID="viewController">
+                <viewController id="pJc-PA-los" customClass="CountryFactsController" customModule="CountryFactsLite" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Tyl-xV-vzd"/>
                         <viewControllerLayoutGuide type="bottom" id="oeD-6C-SC6"/>
