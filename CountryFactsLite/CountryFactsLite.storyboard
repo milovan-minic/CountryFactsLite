@@ -6,6 +6,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -65,20 +66,21 @@
                                 <rect key="frame" x="0.0" y="344" width="375" height="323"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u2Y-ai-ep7" userLabel="Photos">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="161"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="124"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.097292877906976744" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Wo-tk-v2z" userLabel="Benefits">
-                                        <rect key="frame" x="0.0" y="162" width="375" height="161"/>
+                                        <rect key="frame" x="0.0" y="125" width="375" height="198"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.097292877906976744" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="8Wo-tk-v2z" secondAttribute="bottom" id="01g-PX-sDn"/>
-                                    <constraint firstItem="8Wo-tk-v2z" firstAttribute="top" secondItem="u2Y-ai-ep7" secondAttribute="bottom" constant="1" id="IvJ-Ef-d2H"/>
+                                    <constraint firstItem="8Wo-tk-v2z" firstAttribute="top" secondItem="u2Y-ai-ep7" secondAttribute="bottom" constant="1" id="Gye-Zh-J17"/>
                                     <constraint firstAttribute="trailing" secondItem="u2Y-ai-ep7" secondAttribute="trailing" id="Mgf-Om-vz8"/>
-                                    <constraint firstItem="8Wo-tk-v2z" firstAttribute="height" secondItem="u2Y-ai-ep7" secondAttribute="height" id="PJK-XM-69b"/>
+                                    <constraint firstItem="8Wo-tk-v2z" firstAttribute="height" secondItem="u2Y-ai-ep7" secondAttribute="height" multiplier="1.6" id="PJK-XM-69b"/>
                                     <constraint firstItem="8Wo-tk-v2z" firstAttribute="leading" secondItem="7FL-dp-ha5" secondAttribute="leading" id="Yj9-Nq-7Wz"/>
                                     <constraint firstAttribute="trailing" secondItem="8Wo-tk-v2z" secondAttribute="trailing" id="acD-l4-aDk"/>
                                     <constraint firstItem="u2Y-ai-ep7" firstAttribute="leading" secondItem="7FL-dp-ha5" secondAttribute="leading" id="t0h-Ek-7AT"/>
