@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = UIWindow(frame: UIScreen.main.bounds)
         
         let storyboard = UIStoryboard(name: "CountryFactsLite", bundle: nil)
-        guard let nc = storyboard.instantiateInitialViewController() as? UINavigationController else {
+        guard let nc = storyboard.instantiateInitialViewController() as? UIPageViewController else {
             fatalError("Failed to create instance of UINC from \(storyboard)")
         }
         

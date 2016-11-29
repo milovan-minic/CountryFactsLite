@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="8GB-6n-2Tt">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,18 +9,18 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Page View Controller-->
+        <!--Country Facts Controller-->
         <scene sceneID="wDU-02-wxi">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="8GB-6n-2Tt" sceneMemberID="viewController"/>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="8GB-6n-2Tt" customClass="CountryFactsController" customModule="CountryFactsLite" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aEv-PI-A5y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-194" y="188"/>
         </scene>
-        <!--Country Facts Controller-->
+        <!--View Controller-->
         <scene sceneID="6qc-jh-2dl">
             <objects>
-                <viewController id="pJc-PA-los" customClass="CountryFactsController" customModule="CountryFactsLite" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="pJc-PA-los" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Tyl-xV-vzd"/>
                         <viewControllerLayoutGuide type="bottom" id="oeD-6C-SC6"/>
@@ -30,10 +30,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="Beijing" translatesAutoresizingMaskIntoConstraints="NO" id="FFc-8h-AIZ">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jrn-Ga-D8h" userLabel="CountryInfo">
-                                <rect key="frame" x="0.0" y="64" width="375" height="301"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="323"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bwc-bj-IeP" userLabel="Info">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
@@ -62,14 +62,14 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7FL-dp-ha5" userLabel="CountryBenefits">
-                                <rect key="frame" x="0.0" y="366" width="375" height="301"/>
+                                <rect key="frame" x="0.0" y="344" width="375" height="323"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u2Y-ai-ep7" userLabel="Photos">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="161"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.097292877906976744" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Wo-tk-v2z" userLabel="Benefits">
-                                        <rect key="frame" x="0.0" y="151" width="375" height="150"/>
+                                        <rect key="frame" x="0.0" y="162" width="375" height="161"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.097292877906976744" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
                                 </subviews>
@@ -88,7 +88,6 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="FFc-8h-AIZ" firstAttribute="top" secondItem="Tyl-xV-vzd" secondAttribute="bottom" id="4Xz-NB-dhR"/>
                             <constraint firstAttribute="bottomMargin" secondItem="7FL-dp-ha5" secondAttribute="bottom" id="5LM-gC-WqQ"/>
                             <constraint firstAttribute="trailing" secondItem="7FL-dp-ha5" secondAttribute="trailing" id="IZV-5Y-ezj"/>
                             <constraint firstItem="7FL-dp-ha5" firstAttribute="height" secondItem="Jrn-Ga-D8h" secondAttribute="height" id="K0k-uG-Unk"/>
@@ -100,6 +99,7 @@
                             <constraint firstItem="7FL-dp-ha5" firstAttribute="top" secondItem="Jrn-Ga-D8h" secondAttribute="bottom" constant="1" id="hp5-1T-2ee"/>
                             <constraint firstAttribute="bottomMargin" secondItem="FFc-8h-AIZ" secondAttribute="bottom" id="mRN-UG-kiX"/>
                             <constraint firstAttribute="trailing" secondItem="Jrn-Ga-D8h" secondAttribute="trailing" id="sC1-Ai-iQC"/>
+                            <constraint firstItem="FFc-8h-AIZ" firstAttribute="top" secondItem="AAa-hk-iFO" secondAttribute="topMargin" id="yDG-me-LJo"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="qAE-KQ-UeZ"/>
